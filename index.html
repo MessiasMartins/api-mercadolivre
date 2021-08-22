@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <meta description="Projeto para consumir a API do Mercado Livre" />
+    <title>Consumo de API (Mercado Livre)</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="libs/bulma/css/bulma-rtl.min.css" />
     <script src="script.js"></script>
   </head>
-
   <body>
-    <section class="container">
-      <section class="items"></section>
-      <section class="cart">
-        <span class="cart__title">Carrinho de compras</span>
-        <button class="empty-cart">Esvaziar carrinho</button>
-        <ol class="cart__items"></ol>
+    <header>
+      <h1 class="title is-1">Consumo de API</h1>
+      <h2 class="subtitle is-3">Mercado Livre</h2>
+    </header>
+    <main>
+      <section class="container">
+        <!--Aqui esta o conteudo vindo da API-->
+        <section class="items"></section>
+        <!--Aqui esta o contudo do Carrinho-->
+        <section class="cart">
+          <span class="cart__title">Carrinho de Compras</span>
+          <button class="button is-danger empty-cart">Esvaziar Carrinho</button>
+          <ol type="I" class="cart__items"></ol>
+          <span class="cart__price">Total:</span>
+        </section>
       </section>
-    </section>
+    </main>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Carrinho API Mercado Livre</strong> Desenvolvido por: <a href="https://www.linkedin.com/in/messiasmartins/">Messias Martins</a>
+          <a href="http://opensource.org/licenses/mit-license.php">MIT License</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
